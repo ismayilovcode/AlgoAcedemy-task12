@@ -1,0 +1,97 @@
+body {
+  font-family: karla;
+  font-size: 16px;
+  padding: 16px;
+}
+
+div.all {
+  display: grid;
+  grid-template-areas:
+    "H H"
+    "A M";
+  margin: 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 53%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.all > div.text {
+  grid-area: H;
+  padding: 32px;
+}
+
+div.all > div.text > h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+div.all > div.text > p.selected1 {
+  color: hsl(71, 73%, 54%);
+}
+
+div.all > div.text > p.selected2 {
+  color: hsl(218, 22%, 67%);
+}
+
+div.all > div.price {
+  grid-area: A;
+  padding: 16px 32px;
+  background-color: hsl(179, 62%, 43%);
+}
+
+div.all > div.price > p {
+}
+
+div.all > div.price > a {
+  background-color: hsl(71, 85%, 58%);
+  text-decoration: none;
+  padding: 12px 80px;
+  color: hsl(204, 43%, 93%);
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 50px;
+}
+
+div.all > div.why {
+  grid-area: M;
+  padding: 16px 32px;
+  background-color: hsla(179, 62%, 43%, 0.852);
+  border-bottom-right-radius: 10px;
+}
+
+div {
+  color: hsl(179, 62%, 43%);
+  color: hsl(71, 73%, 54%);
+
+  color: hsl(204, 43%, 93%);
+  color: hsl(218, 22%, 67%);
+}
+
+div.all > div.price > p,
+div.all > div.why > p {
+  color: hsl(204, 43%, 93%);
+}
+
+div.all > div.price {
+  border-bottom-left-radius: 10px;
+}
+
+div.all > div.why > h1 {
+  color: hsl(204, 43%, 93%);
+}
+
+div.all > div.price > p.selected3,
+div.all > div.price > p.selected5,
+div.all > div.why > p.selected4 {
+  font-size: 23px;
+}
+
+div.all > div.price > p.selected3 {
+  margin-top: 35px;
+}
